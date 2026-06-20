@@ -776,23 +776,50 @@
 
 /* ── DEFAULTS ── */
 const COLLEGE_TEMPLATE = [
-  { id: 'ct1', name: 'Gym',           start: '06:00', end: '07:30', done: false },
-  { id: 'ct2', name: 'Breakfast & Morning Prep', start: '07:30', end: '09:30', done: false },
-  { id: 'ct3', name: 'College',       start: '10:00', end: '17:00', done: false },
-  { id: 'ct4', name: 'Evening Class', start: '17:00', end: '19:00', done: false },
-  { id: 'ct5', name: 'Dinner',        start: '19:00', end: '20:00', done: false },
-  { id: 'ct6', name: 'Revision',      start: '21:00', end: '23:00', done: false },
+  { id: 'ct1',  name: 'Wake Up',                    start: '05:30', end: '05:45', done: false },
+  { id: 'ct2',  name: 'Get Ready For Gym',          start: '05:45', end: '06:00', done: false },
+  { id: 'ct3',  name: 'Gym',                        start: '06:00', end: '07:30', done: false },
+  { id: 'ct4',  name: 'Reach Home',                 start: '07:30', end: '07:45', done: false },
+  { id: 'ct5',  name: 'Milkshake',                  start: '07:45', end: '08:15', done: false },
+  { id: 'ct6',  name: 'Ready for College',          start: '08:15', end: '08:30', done: false },
+  { id: 'ct7',  name: 'Breakfast',                  start: '08:30', end: '08:50', done: false },
+  { id: 'ct8',  name: 'Reach Kalamboli Station',    start: '08:50', end: '09:10', done: false },
+  { id: 'ct9',  name: 'Travelling',                 start: '09:10', end: '10:00', done: false },
+  { id: 'ct10', name: 'College (Study + College Work)', start: '10:00', end: '17:00', done: false },
+  { id: 'ct11', name: 'Reach Vashi',                start: '17:00', end: '18:30', done: false },
+  { id: 'ct12', name: 'Snacks / Breakfast',         start: '18:30', end: '18:50', done: false },
+  { id: 'ct13', name: 'Class',                      start: '18:50', end: '21:10', done: false },
+  { id: 'ct14', name: 'Travelling',                 start: '21:10', end: '22:30', done: false },
+  { id: 'ct15', name: 'Dinner',                     start: '22:30', end: '23:00', done: false },
+  { id: 'ct16', name: 'Study',                      start: '23:00', end: '01:00', done: false },
+  { id: 'ct17', name: 'Sleep',                      start: '01:00', end: '05:30', done: false }
 ];
 
 const HOME_TEMPLATE = [
-  { id: 'ht1', name: 'Gym',           start: '06:00', end: '07:30', done: false },
-  { id: 'ht2', name: 'DSA Practice',  start: '10:00', end: '13:00', done: false },
-  { id: 'ht3', name: 'Lunch Break',   start: '13:00', end: '14:00', done: false },
-  { id: 'ht4', name: 'Project Work',  start: '14:00', end: '16:00', done: false },
-  { id: 'ht5', name: 'Full Stack Dev',start: '16:00', end: '19:30', done: false },
-  { id: 'ht6', name: 'Dinner',        start: '19:30', end: '20:30', done: false },
-  { id: 'ht7', name: 'Revision',      start: '20:30', end: '23:00', done: false },
+  { id: 'ht1',  name: 'Wake Up',           start: '05:30', end: '05:45', done: false },
+  { id: 'ht2',  name: 'Get Ready For Gym', start: '05:45', end: '06:00', done: false },
+  { id: 'ht3',  name: 'Reach Gym',         start: '06:00', end: '06:15', done: false },
+  { id: 'ht4',  name: 'Gym',               start: '06:15', end: '07:30', done: false },
+  { id: 'ht5',  name: 'Reach Home',        start: '07:30', end: '08:00', done: false },
+  { id: 'ht6',  name: 'Milkshake',         start: '08:15', end: '08:45', done: false },
+  { id: 'ht7',  name: 'Shower',            start: '08:45', end: '09:15', done: false },
+  { id: 'ht8',  name: 'Free Time',         start: '09:15', end: '09:30', done: false },
+  { id: 'ht9',  name: 'Breakfast',         start: '09:30', end: '10:00', done: false },
+  { id: 'ht10', name: 'Mobile',            start: '10:00', end: '10:30', done: false },
+  { id: 'ht11', name: 'Sleep',             start: '10:30', end: '12:00', done: false },
+  { id: 'ht12', name: 'Study',             start: '12:00', end: '14:00', done: false },
+  { id: 'ht13', name: 'Lunch',             start: '14:00', end: '14:30', done: false },
+  { id: 'ht14', name: 'Study',             start: '14:30', end: '16:30', done: false },
+  { id: 'ht15', name: 'Sleep',             start: '16:30', end: '17:15', done: false },
+  { id: 'ht16', name: 'Ready For Class',   start: '17:15', end: '17:35', done: false },
+  { id: 'ht17', name: 'Travelling',        start: '17:35', end: '18:50', done: false },
+  { id: 'ht18', name: 'Class',             start: '18:50', end: '21:10', done: false },
+  { id: 'ht19', name: 'Travelling',        start: '21:10', end: '22:30', done: false },
+  { id: 'ht20', name: 'Dinner',            start: '22:30', end: '23:00', done: false },
+  { id: 'ht21', name: 'Study',             start: '23:00', end: '00:30', done: false },
+  { id: 'ht22', name: 'Sleep',             start: '00:30', end: '05:30', done: false }
 ];
+
 
 const DEFAULT_HABITS = [
   { id: 'h_gym',      name: 'Gym',      icon: '💪', streak: 0 },
